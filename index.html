@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="id"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover"><title>MASA'IL</title><link href="https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&family=Figtree:wght@400;600&family=Literata:opsz,wght@7..72,400;7..72,700&display=swap" rel="stylesheet"><style id="appcss">
+:root{--bg:#f6f8f6;--card:#fff;--ink:#16231e;--mute:#5b6a63;--line:#dce4de;--brand:#0b7f68;--deep:#0a4f43;--bi:#fff;--soft:#e2f1ec;--bad:#a3342b;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#0e1512;--card:#16201b;--ink:#e8eee9;--mute:#9aa9a1;--line:#28362e;--brand:#4fcaa8;--deep:#0d3a31;--bi:#08120e;--soft:#1a2c24;--bad:#e8847a}}
+:root[data-theme="dark"]{--bg:#0e1512;--card:#16201b;--ink:#e8eee9;--mute:#9aa9a1;--line:#28362e;--brand:#4fcaa8;--deep:#0d3a31;--bi:#08120e;--soft:#1a2c24;--bad:#e8847a}
+html{scroll-padding-top:env(safe-area-inset-top,0px)}*,*::before,*::after{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.6 Figtree,system-ui,sans-serif}
+a{color:inherit}:focus-visible{outline:2px solid var(--brand);outline-offset:2px}
+.w{max-width:760px;margin:0 auto;padding:0 18px}
+.hd{position:sticky;top:0;z-index:5;background:var(--card);border-bottom:1px solid var(--line);padding-top:env(safe-area-inset-top,0px)}
+.hr{display:grid;grid-template-columns:1fr auto 1fr;align-items:center;height:56px}
+.logo{font:700 24px Literata,serif;color:var(--brand);text-decoration:none}
+.ib{border:0;background:none;color:var(--ink);font:600 14px Figtree,sans-serif;cursor:pointer;padding:10px 0}
+.hb{display:block;width:22px;height:2px;background:currentColor;box-shadow:0 7px currentColor,0 -7px currentColor}
+.r{text-align:right}
+.sr{padding:0 0 12px}
+.hero{background:var(--deep);color:#fff;padding:34px 0 70px}
+.hero h1{font:700 40px/1.1 Literata,serif;margin:0 0 8px}.hero p{margin:0;opacity:.85;max-width:52ch}
+.pray{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:16px;margin:-48px 0 20px;color:var(--ink);box-shadow:0 8px 24px rgba(0,0,0,.12)}
+.dt{display:flex;justify-content:space-between;gap:10px;flex-wrap:wrap;align-items:flex-start}
+.dt b{font:700 18px Literata,serif;display:block}.dt small{color:var(--mute)}
+.dt select{width:auto;padding:6px 10px}
+.nx{margin:12px 0;padding:10px 12px;background:var(--soft);border-radius:8px;font-weight:600;color:var(--brand)}
+.pg{display:grid;grid-template-columns:repeat(3,1fr);gap:8px}
+.pg div{border:1px solid var(--line);border-radius:8px;padding:8px;text-align:center}
+.pg div.on{background:var(--brand);color:var(--bi);border-color:var(--brand)}
+.pg small{display:block;opacity:.8}.pg b{font:700 20px Literata,serif}
+.note{font-size:13px;color:var(--mute);margin:10px 0 0}
+.an{background:var(--soft);border-left:4px solid var(--brand);padding:12px 14px;border-radius:6px;margin:0 0 20px}
+h2.sec{font:700 22px Literata,serif;margin:28px 0 4px;display:flex;justify-content:space-between;align-items:baseline;gap:10px}
+h2.sec button{font:600 14px Figtree,sans-serif;color:var(--brand);background:none;border:0;cursor:pointer}
+.lead{display:block;text-decoration:none;background:var(--card);border:1px solid var(--line);border-radius:12px;padding:22px;margin:12px 0}
+.lead h3{font:700 26px/1.3 Literata,serif;margin:4px 0 8px}.lead p{margin:0;color:var(--mute)}
+.it{display:block;text-decoration:none;padding:16px 0;border-bottom:1px solid var(--line)}
+.it:hover h3,.lead:hover h3{color:var(--brand)}
+.cat{color:var(--brand);font-weight:600;font-size:14px}
+.it h3{font:700 19px/1.4 Literata,serif;margin:2px 0 4px}.it p{margin:0;color:var(--mute)}
+.meta{font-size:13px;color:var(--mute);margin-top:6px}
+.ask{background:var(--deep);color:#fff;border-radius:12px;padding:22px;margin:30px 0;text-align:center}
+.ask h3{font:700 22px Literata,serif;margin:0 0 6px}.ask p{margin:0 0 14px;opacity:.85}
+.btn{display:inline-block;font:600 14px Figtree,sans-serif;border:1px solid var(--line);background:var(--card);color:var(--ink);padding:9px 16px;border-radius:8px;cursor:pointer;text-decoration:none}
+.btn.p{background:var(--brand);color:var(--bi);border-color:var(--brand)}.btn.d{color:var(--bad)}.ask .btn{background:#fff;color:var(--deep);border-color:#fff}
+input,select,textarea{width:100%;font:inherit;color:var(--ink);background:var(--card);border:1px solid var(--line);border-radius:8px;padding:10px 12px}
+textarea{min-height:140px;resize:vertical}
+.ar1{padding:30px 0 10px}.ar1 header{text-align:center}
+.ar1 h1{font:700 30px/1.3 Literata,serif;margin:6px 0 8px}
+.bd{margin-top:24px}.bd p,.bd li{font:400 18px/1.85 Literata,serif}.bd p{margin:0 0 18px;white-space:pre-line}
+.bd h2{font:700 22px Literata,serif;margin:28px 0 10px}
+.bd blockquote{margin:0 0 20px;padding:14px 18px;background:var(--soft);border-right:0;border-left:4px solid var(--brand);border-radius:6px}
+.bd blockquote p{margin:0}
+.ar{direction:rtl;text-align:right;font:400 26px/2.1 Amiri,'Noto Naskh Arabic',serif!important}
+.bd blockquote.ar{border-left:0;border-right:4px solid var(--brand)}
+.rj{border:1px solid var(--line);border-radius:8px;padding:12px 14px;margin:22px 0;color:var(--mute);font-size:15px;white-space:pre-line}
+.rj b{color:var(--ink)}
+.tg{display:flex;gap:8px;flex-wrap:wrap;margin:14px 0}
+.tg button{border:1px solid var(--line);background:var(--card);color:var(--mute);border-radius:99px;padding:4px 12px;font:600 13px Figtree,sans-serif;cursor:pointer}
+.act{display:flex;gap:8px;flex-wrap:wrap;margin:18px 0}
+.wa{text-align:center;font:italic 400 17px Literata,serif;color:var(--mute);margin:26px 0}
+.empty{text-align:center;color:var(--mute);padding:44px 0}
+.ov{position:fixed;inset:0;background:rgba(0,0,0,.45);z-index:9}
+.dr{position:absolute;top:0;bottom:0;left:0;width:min(300px,86vw);background:var(--card);padding:calc(18px + env(safe-area-inset-top,0px)) 18px 18px;overflow-y:auto}
+.dr h2{font:700 22px Literata,serif;color:var(--brand);margin:0 0 12px}
+.dr button{display:block;width:100%;text-align:left;border:0;background:none;color:var(--ink);font:600 16px Figtree,sans-serif;padding:12px 8px;border-bottom:1px solid var(--line);cursor:pointer}
+.dr button[aria-current="true"]{color:var(--brand)}
+.pn{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:4px 18px 18px;margin:18px 0}
+.pn h2{font:700 20px Literata,serif;margin:16px 0 4px}
+label{display:block;margin-top:12px}label span{display:block;font-weight:600;margin-bottom:4px}
+.row{display:flex;gap:8px;align-items:center;margin-top:10px}.row>input{flex:1}
+.ad{display:flex;justify-content:space-between;gap:10px;align-items:center;border-top:1px solid var(--line);padding:10px 0}.ad span{min-width:0;overflow-wrap:anywhere}
+.ck{display:flex;gap:8px;align-items:center}.ck input{width:auto}
+.save{position:sticky;bottom:calc(12px + env(safe-area-inset-bottom,0px));background:var(--ink);color:var(--bg);border-radius:10px;padding:10px 14px;margin:18px 0;display:flex;justify-content:space-between;align-items:center;gap:10px;font-weight:600}
+.save .btn{background:var(--brand);color:var(--bi);border-color:var(--brand)}
+.toast{position:fixed;left:50%;bottom:calc(80px + env(safe-area-inset-bottom,0px));transform:translateX(-50%);background:var(--ink);color:var(--bg);padding:10px 16px;border-radius:8px;font-weight:600;font-size:14px;z-index:20}
+footer{border-top:1px solid var(--line);margin-top:36px;color:var(--mute);font-size:14px;text-align:center;padding:24px 0 40px}
+.chips{display:grid;grid-template-columns:repeat(auto-fill,minmax(130px,1fr));gap:8px;margin:12px 0 0}.chips button{border:1px solid var(--line);background:var(--card);color:var(--ink);border-radius:8px;padding:10px 8px;font:600 14px Figtree,sans-serif;cursor:pointer}.chips button:hover{border-color:var(--brand);color:var(--brand)}.back{display:block;background:none;border:0;color:var(--brand);font:600 14px Figtree,sans-serif;cursor:pointer;padding:6px 0 0}.ttl{font:700 18px Literata,serif}.dt small{display:block}
+@media (min-width:640px){.pg{grid-template-columns:repeat(6,1fr)}.hero h1{font-size:52px}}
+</style></head><body><div id="app"></div><script type="application/json" id="state">{"nama":"MASA'IL","tag":"Tanya jawab dan kajian ringkas seputar ilmu keislaman","salam":"Semoga hari ini penuh berkah. Temukan jawaban singkat untuk pertanyaan keagamaan sehari-hari.","umum":"","kota":"Jakarta","hj":0,"wa":"6285358916436","foot":"","bidang":[{"id":"b1","nama":"Tafsir"},{"id":"b2","nama":"Hadis"},{"id":"b3","nama":"Fikih"},{"id":"b4","nama":"Isu Kontemporer"}],"artikel":[{"id":"a1","judul":"Apakah niat wudhu harus dilafalkan?","bid":"b3","tgl":"2026-10-01","pj":"Redaksi","rj":"Tulis nama kitab dan halaman di sini.","tag":["wudhu","thaharah"],"isi":"Niat tempatnya di **hati** dan dilakukan bersamaan dengan membasuh wajah.\n\n## Soal melafalkan\n\nMelafalkan niat hukumnya sunnah menurut sebagian ulama untuk membantu hati.\n\n> Ini contoh blok kutipan dalil. Tulis ayat atau hadis di sini dengan awalan tanda lebih besar.\n\nIni artikel contoh. Ubah atau hapus lewat menu Kelola."},{"id":"a2","judul":"Kapan waktu shalat Dhuha?","bid":"b3","tgl":"2026-10-02","pj":"Redaksi","rj":"","tag":["shalat"],"isi":"Waktunya dimulai ketika matahari sudah naik setinggi tombak dan berakhir sebelum masuk waktu Dzuhur.\n\n- Minimal dua rakaat\n- Boleh dikerjakan dua rakaat salam\n\nIni artikel contoh. Ubah atau hapus lewat menu Kelola."}],"awal":[["2026-06-16",1,1448],["2026-07-16",2,1448],["2026-08-14",3,1448],["2026-09-13",4,1448],["2026-10-12",5,1448],["2026-11-11",6,1448]],"berita":[{"judul":"Wajib halal Oktober 2026 didukung berjalan tanpa penundaan","ringkas":"MUI, akademisi, dan pemantau birokrasi menyatakan dukungan agar kewajiban sertifikasi halal yang berlaku Oktober 2026 tidak ditunda. Peraturan BPJPH Nomor 4 Tahun 2026 menjadi pedoman pemastian kesesuaian halal untuk produk luar negeri yang masuk ke Indonesia.","sumber":"Okezone","url":"https://economy.okezone.com/read/2026/10/06/320/3246211/implementasi-wajib-halal-oktober-2026-tanpa-penundaan-perkuat-posisi-ri-di-dunia","tgl":"2026-10-06"},{"judul":"Kemenag ukur indeks kerukunan umat beragama 2026","ringkas":"Kementerian Agama kembali mengukur Indeks Kerukunan Umat Beragama dengan 5.730 responden. Pengumpulan data dilakukan 14 Oktober sampai 14 November 2026 oleh tiga Balai Litbang Agama, yakni Jakarta, Makassar, dan Semarang.","sumber":"Klikers Indonesia","url":"https://www.klikers.id/read/berita-kilikers/kemenag-gelar-pengukuran-indeks-kerukunan-2026-libatkan-5-730-responden/","tgl":"2026-10-06"},{"judul":"Ribuan santri berkemah di Malang dalam PPSN VI","ringkas":"Perkemahan Pramuka Santri Nusantara VI digelar Kementerian Agama pada 30 September sampai 6 Oktober 2026 di Pondok Pesantren An-Nur 2 Bululawang, Malang. Kontingen santri dari berbagai provinsi ikut serta, dengan rangkaian materi wawasan bagi peserta.","sumber":"Sindonews","url":"https://daerah.sindonews.com/read/1757451/174/lindungi-generasi-muda-ribuan-santri-di-malang-ikuti-edukasi-khusus-kemenag-1791267038","tgl":"2026-10-06"},{"judul":"Tema Hari Santri 2026: Santri Menguatkan Negeri","ringkas":"Menteri Agama Nasaruddin Umar meluncurkan logo dan tema Hari Santri 2026 pada 22 September. Hari Santri mengingatkan peran ulama dan santri, termasuk Resolusi Jihad 22 Oktober 1945. Salah satu agendanya adalah program Surat Santri untuk Presiden sampai 8 Oktober.","sumber":"iNews","url":"https://www.inews.id/news/nasional/kemenag-luncurkan-logo-dan-tema-hari-santri-2026-siapkan-rangkaian-acara-hingga-oktober","tgl":"2026-09-22"}],"beritaTgl":"2026-10-06"}</script><script id="appjs">
+var S=JSON.parse(document.getElementById('state').textContent),dirty=false,can=false,admin=false,kat='all',q='',editId=null,A=null,menu=false,srch=false,kota=S.kota;
+var END='<'+'/script>';
+var PROV=[
+["Aceh",7,[["Banda Aceh",5.55,95.32],["Lhokseumawe",5.18,97.15],["Langsa",4.47,97.97],["Meulaboh",4.14,96.13],["Sabang",5.89,95.32]]],
+["Sumatera Utara",7,[["Medan",3.60,98.67],["Binjai",3.60,98.49],["Pematangsiantar",2.96,99.06],["Tebing Tinggi",3.33,99.16],["Padangsidimpuan",1.38,99.27],["Sibolga",1.74,98.78],["Tanjungbalai",2.97,99.80],["Gunungsitoli",1.29,97.61],["Kisaran",2.98,99.62],["Rantauprapat",2.10,99.83]]],
+["Sumatera Barat",7,[["Padang",-0.95,100.42],["Bukittinggi",-0.31,100.37],["Payakumbuh",-0.23,100.63],["Solok",-0.80,100.65],["Padang Panjang",-0.46,100.40],["Pariaman",-0.63,100.12],["Sawahlunto",-0.68,100.78]]],
+["Riau",7,[["Pekanbaru",0.51,101.45],["Dumai",1.67,101.45],["Siak Sri Indrapura",0.80,102.04],["Tembilahan",-0.32,103.16]]],
+["Kepulauan Riau",7,[["Batam",1.05,104.03],["Tanjungpinang",0.92,104.45],["Tanjung Balai Karimun",1.00,103.43]]],
+["Jambi",7,[["Jambi",-1.61,103.61],["Sungai Penuh",-2.06,101.39],["Muara Bungo",-1.49,102.12],["Kuala Tungkal",-0.82,103.48]]],
+["Sumatera Selatan",7,[["Palembang",-2.98,104.75],["Lubuklinggau",-3.30,102.86],["Prabumulih",-3.43,104.24],["Pagar Alam",-4.03,103.25],["Baturaja",-4.13,104.17]]],
+["Bangka Belitung",7,[["Pangkalpinang",-2.13,106.12],["Tanjung Pandan",-2.75,107.65],["Muntok",-2.07,105.18]]],
+["Bengkulu",7,[["Bengkulu",-3.80,102.26],["Curup",-3.47,102.52],["Manna",-4.46,102.92]]],
+["Lampung",7,[["Bandar Lampung",-5.43,105.26],["Metro",-5.11,105.31],["Kotabumi",-4.83,104.90],["Liwa",-5.03,104.06]]],
+["Banten",7,[["Serang",-6.12,106.15],["Tangerang",-6.18,106.63],["Tangerang Selatan",-6.29,106.72],["Cilegon",-6.00,106.05],["Rangkasbitung",-6.36,106.25],["Pandeglang",-6.31,106.10]]],
+["DKI Jakarta",7,[["Jakarta Pusat",-6.18,106.83],["Jakarta Selatan",-6.26,106.82],["Jakarta Barat",-6.17,106.76],["Jakarta Timur",-6.23,106.90],["Jakarta Utara",-6.14,106.89]]],
+["Jawa Barat",7,[["Bandung",-6.92,107.62],["Bekasi",-6.24,106.99],["Bogor",-6.60,106.80],["Depok",-6.40,106.82],["Cirebon",-6.71,108.56],["Sukabumi",-6.92,106.93],["Tasikmalaya",-7.33,108.22],["Cimahi",-6.87,107.54],["Garut",-7.21,107.91],["Karawang",-6.31,107.31],["Purwakarta",-6.56,107.44],["Indramayu",-6.33,108.32]]],
+["Jawa Tengah",7,[["Semarang",-6.97,110.42],["Surakarta",-7.57,110.83],["Magelang",-7.47,110.22],["Pekalongan",-6.89,109.68],["Tegal",-6.87,109.14],["Salatiga",-7.33,110.50],["Kudus",-6.80,110.84],["Purwokerto",-7.43,109.24],["Cilacap",-7.73,109.01],["Kebumen",-7.67,109.65],["Pati",-6.75,111.04],["Jepara",-6.59,110.67]]],
+["DI Yogyakarta",7,[["Yogyakarta",-7.80,110.36],["Bantul",-7.89,110.33],["Sleman",-7.72,110.35],["Wates",-7.86,110.16],["Wonosari",-7.96,110.60]]],
+["Jawa Timur",7,[["Surabaya",-7.26,112.75],["Malang",-7.98,112.63],["Kediri",-7.82,112.01],["Madiun",-7.63,111.52],["Jember",-8.17,113.70],["Banyuwangi",-8.22,114.37],["Pasuruan",-7.65,112.91],["Probolinggo",-7.75,113.22],["Mojokerto",-7.47,112.43],["Blitar",-8.10,112.17],["Sidoarjo",-7.45,112.72],["Gresik",-7.16,112.65],["Pamekasan",-7.16,113.48],["Sumenep",-7.01,113.87],["Bojonegoro",-7.15,111.88],["Tuban",-6.90,112.06]]],
+["Kalimantan Barat",7,[["Pontianak",-0.03,109.34],["Singkawang",0.91,108.98],["Sambas",1.36,109.30],["Ketapang",-1.83,109.98],["Sintang",0.08,111.49],["Sanggau",0.12,110.60]]],
+["Kalimantan Tengah",7,[["Palangka Raya",-2.21,113.92],["Sampit",-2.54,112.95],["Pangkalan Bun",-2.68,111.62],["Buntok",-1.71,114.83],["Muara Teweh",-0.95,114.89]]],
+["Kalimantan Selatan",8,[["Banjarmasin",-3.32,114.59],["Banjarbaru",-3.44,114.83],["Martapura",-3.41,114.85],["Barabai",-2.58,115.38],["Kotabaru",-3.24,116.22],["Amuntai",-2.42,115.25]]],
+["Kalimantan Timur",8,[["Samarinda",-0.50,117.15],["Balikpapan",-1.24,116.83],["Bontang",0.13,117.50],["Tenggarong",-0.42,116.99],["Sangatta",0.50,117.54],["Penajam",-1.27,116.71]]],
+["Kalimantan Utara",8,[["Tanjung Selor",2.84,117.37],["Tarakan",3.30,117.63],["Nunukan",4.14,117.67],["Malinau",3.58,116.64]]],
+["Bali",8,[["Denpasar",-8.65,115.22],["Singaraja",-8.11,115.09],["Gianyar",-8.54,115.33],["Tabanan",-8.54,115.12],["Klungkung",-8.53,115.40],["Negara",-8.36,114.62],["Amlapura",-8.45,115.61]]],
+["Nusa Tenggara Barat",8,[["Mataram",-8.58,116.12],["Bima",-8.46,118.73],["Sumbawa Besar",-8.49,117.42],["Praya",-8.71,116.27],["Selong",-8.65,116.53],["Dompu",-8.54,118.46],["Taliwang",-8.74,116.86]]],
+["Nusa Tenggara Timur",8,[["Kupang",-10.18,123.61],["Maumere",-8.62,122.21],["Ende",-8.84,121.66],["Labuan Bajo",-8.50,119.88],["Ruteng",-8.61,120.46],["Atambua",-9.11,124.89],["Waingapu",-9.66,120.26],["Kefamenanu",-9.45,124.48],["Soe",-9.86,124.28],["Larantuka",-8.34,122.99],["Bajawa",-8.79,120.98],["Waikabubak",-9.65,119.42]]],
+["Sulawesi Utara",8,[["Manado",1.47,124.84],["Bitung",1.44,125.19],["Tomohon",1.32,124.84],["Kotamobagu",0.73,124.32],["Tondano",1.30,124.91]]],
+["Gorontalo",8,[["Kota Gorontalo",0.54,123.06],["Limboto",0.62,122.98],["Marisa",0.49,121.93],["Kwandang",0.86,122.80]]],
+["Sulawesi Tengah",8,[["Palu",-0.90,119.87],["Poso",-1.39,120.75],["Luwuk",-0.95,122.79],["Toli-Toli",1.05,120.80],["Parigi",-0.80,120.18],["Donggala",-0.68,119.74],["Ampana",-0.87,121.59]]],
+["Sulawesi Barat",8,[["Mamuju",-2.68,118.89],["Majene",-3.54,118.97],["Polewali",-3.43,119.34],["Pasangkayu",-1.18,119.37]]],
+["Sulawesi Selatan",8,[["Makassar",-5.15,119.43],["Parepare",-4.01,119.62],["Palopo",-3.00,120.20],["Bulukumba",-5.55,120.19],["Watampone",-4.54,120.33],["Sengkang",-4.13,120.03],["Maros",-5.00,119.57],["Sungguminasa",-5.21,119.45],["Pinrang",-3.79,119.65],["Takalar",-5.42,119.49],["Enrekang",-3.56,119.77],["Rantepao",-2.97,119.90]]],
+["Sulawesi Tenggara",8,[["Kendari",-3.97,122.51],["Baubau",-5.47,122.63],["Kolaka",-4.05,121.59],["Raha",-4.84,122.71]]],
+["Maluku",9,[["Ambon",-3.70,128.18],["Tual",-5.63,132.75],["Masohi",-3.31,128.92],["Namlea",-3.26,127.10],["Saumlaki",-7.98,131.30],["Dobo",-5.77,134.22]]],
+["Maluku Utara",9,[["Ternate",0.79,127.38],["Tidore",0.68,127.40],["Sofifi",0.74,127.57],["Tobelo",1.73,128.00],["Labuha",-0.63,127.48],["Jailolo",1.06,127.48]]],
+["Papua Barat",9,[["Manokwari",-0.86,134.06],["Fakfak",-2.93,132.30],["Kaimana",-3.65,133.76],["Bintuni",-2.12,133.52],["Wasior",-2.72,134.50]]],
+["Papua Barat Daya",9,[["Sorong",-0.88,131.26],["Waisai",-0.43,130.83],["Teminabuan",-1.45,132.02]]],
+["Papua",9,[["Jayapura",-2.53,140.72],["Biak",-1.18,136.08],["Sarmi",-1.86,138.75]]],
+["Papua Selatan",9,[["Merauke",-8.50,140.40],["Tanah Merah",-6.10,140.30],["Agats",-5.54,138.13]]],
+["Papua Tengah",9,[["Nabire",-3.37,135.48],["Timika",-4.53,136.89],["Enarotali",-3.92,136.37]]],
+["Papua Pegunungan",9,[["Wamena",-4.10,138.94],["Oksibil",-4.91,140.63]]]
+];
+function findCity(n){for(var i=0;i<PROV.length;i++)for(var j=0;j<PROV[i][2].length;j++){var c=PROV[i][2][j];if(c[0]===n)return[c[0],c[1],c[2],PROV[i][1],PROV[i][0]]}return null}
+var MON=['Muharram','Safar','Rabiulawal','Rabiulakhir','Jumadilawal','Jumadilakhir','Rajab','Syaban','Ramadan','Syawal','Zulkaidah','Zulhijah'],pv=null;
+if(!S.awal)S.awal=[['2026-06-16',1,1448],['2026-07-16',2,1448],['2026-08-14',3,1448],['2026-09-13',4,1448],['2026-10-12',5,1448],['2026-11-11',6,1448]];
+var SH=['Subuh','Terbit','Dzuhur','Ashar','Maghrib','Isya'];
+try{var sk=localStorage.getItem('kota');if(sk&&findCity(sk))kota=sk}catch(e){}
+if(!findCity(kota))kota='';
+if(window.claude&&claude.use){
+  claude.use('user').then(function(u){can=!!(u&&u.canEdit());render()}).catch(function(){});
+  claude.use('artifact').then(function(a){A=a}).catch(function(){});
+}
+function el(t,a,c){var e=document.createElement(t);if(a)for(var k in a){if(k==='c')e.className=a[k];else if(k==='t')e.textContent=a[k];else e.setAttribute(k,a[k])}(c||[]).forEach(function(x){e.appendChild(x)});return e}
+function toast(m){var t=el('div',{c:'toast',role:'status',t:m});document.body.appendChild(t);setTimeout(function(){t.remove()},2600)}
+function fmt(s){try{return new Date(s+'T12:00:00Z').toLocaleDateString('id-ID',{day:'numeric',month:'long',year:'numeric',timeZone:'UTC'})}catch(e){return s}}
+function bn(id){var b=S.bidang.filter(function(x){return x.id===id})[0];return b?b.nama:'Lainnya'}
+function uid(){return 'x'+Date.now().toString(36)+Math.floor(Math.random()*99)}
+function mut(f){f();dirty=true;render()}
+function pad(n){return(n<10?'0':'')+n}
+function hm(h){var m=Math.round((((h%24)+24)%24)*60);return pad(Math.floor(m/60)%24)+':'+pad(m%60)}
+function rad(x){return x*Math.PI/180}function deg(x){return x*180/Math.PI}
+function calc(c,y,m,d){
+  var la=rad(c[1]),lng=c[2],jd=Date.UTC(y,m,d)/864e5+2440587.5-lng/360,D=jd+0.5-2451545;
+  var g=rad((357.529+0.98560028*D)%360),qq=(((280.459+0.98564736*D)%360)+360)%360;
+  var L=rad((((qq+1.915*Math.sin(g)+0.02*Math.sin(2*g))%360)+360)%360),e=rad(23.439-3.6e-7*D);
+  var ra=(deg(Math.atan2(Math.cos(e)*Math.sin(L),Math.cos(L)))/15+24)%24;
+  var eqt=((qq/15-ra+12)%24+24)%24-12,dec=Math.asin(Math.sin(e)*Math.sin(L)),noon=12-eqt+c[3]-lng/15;
+  function T(a){var x=(-Math.sin(rad(a))-Math.sin(dec)*Math.sin(la))/(Math.cos(dec)*Math.cos(la));return deg(Math.acos(Math.max(-1,Math.min(1,x))))/15}
+  var alt=deg(Math.atan(1/(1+Math.tan(Math.abs(la-dec))))),i=2/60;
+  return [noon-T(20)+i,noon-T(0.833)-i,noon+i,noon+T(-alt)+i,noon+T(0.833)+i,noon+T(18)+i];
+}
+function cityNow(){var c=findCity(kota)||findCity('Jakarta Pusat'),n=new Date(Date.now()+c[3]*36e5);return{c:c,y:n.getUTCFullYear(),m:n.getUTCMonth(),d:n.getUTCDate(),h:n.getUTCHours()+n.getUTCMinutes()/60}}
+function fillPray(){
+  var box=document.getElementById('pray');if(!box)return;box.textContent='';
+  var n=cityNow(),t=calc(n.c,n.y,n.m,n.d),nxt=-1,i;
+  [0,2,3,4,5].forEach(function(k){if(nxt<0&&t[k]>n.h)nxt=k});
+  var left=nxt<0?t[0]+24-n.h:t[nxt]-n.h,mm=Math.round(left*60),lbl=SH[nxt<0?0:nxt];
+  box.appendChild(el('div',{c:'nx',t:'Menuju '+lbl+': '+(mm>=60?Math.floor(mm/60)+' jam ':'')+(mm%60)+' menit'}));
+  var g=el('div',{c:'pg'});
+  SH.forEach(function(s,k){g.appendChild(el('div',{c:k===(nxt<0?0:nxt)?'on':''},[el('small',{t:s}),el('b',{t:hm(t[k])})]))});
+  box.appendChild(g);
+}
+function dates(){
+  var n=cityNow(),u=Date.UTC(n.y,n.m,n.d,12),day=Math.floor(Date.UTC(n.y,n.m,n.d)/864e5),h='',i=-1;
+  var A=(S.awal||[]).map(function(a){var p=String(a[0]).split('-');return{t:Math.floor(Date.UTC(+p[0],+p[1]-1,+p[2])/864e5),m:a[1],y:a[2]}}).sort(function(a,b){return a.t-b.t});
+  A.forEach(function(a,k){if(a.t<=day)i=k});
+  if(i>=0&&day-A[i].t<=(A[i+1]?29:28))h=(day-A[i].t+1)+' '+MON[A[i].m-1]+' '+A[i].y+' H';
+  else try{h=new Intl.DateTimeFormat('id-u-ca-islamic-umalqura',{day:'numeric',month:'long',year:'numeric',timeZone:'UTC'}).format(u+S.hj*864e5)+' (perkiraan)'}catch(e){}
+  return[new Intl.DateTimeFormat('id-ID',{weekday:'long',day:'numeric',month:'long',year:'numeric',timeZone:'UTC'}).format(u),h];
+}
+setInterval(fillPray,30000);
+function build(){
+  var h='<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover"><title>'+S.nama.replace(/&/g,'&amp;').replace(/</g,'&lt;')+'</title><link href="https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&family=Figtree:wght@400;600&family=Literata:opsz,wght@7..72,400;7..72,700&display=swap" rel="stylesheet">';
+  return '<!DOCTYPE html>\n<html lang="id"><head>'+h+'<style id="appcss">'+document.getElementById('appcss').textContent+'</style></head><body><div id="app"></div><script type="application/json" id="state">'+JSON.stringify(S).replace(/</g,'\\u003c')+END+'<script id="appjs">'+document.getElementById('appjs').textContent+END+'</body></html>';
+}
+function publish(){
+  if(!A){toast('Publikasi tidak tersedia di tampilan ini');return}
+  A.publish(build()).catch(function(e){toast(e&&e.code==='conflict'?'Versi lebih baru sudah ada. Muat ulang halaman.':'Gagal mempublikasikan')});
+}
+function isAr(b){return(b.match(/[\u0600-\u06FF]/g)||[]).length>b.length*0.5}
+function inl(s,p){s.split(/(\*\*[^*]+\*\*|\*[^*]+\*)/).forEach(function(x){if(/^\*\*.+\*\*$/.test(x))p.appendChild(el('strong',{t:x.slice(2,-2)}));else if(/^\*.+\*$/.test(x))p.appendChild(el('em',{t:x.slice(1,-1)}));else if(x)p.appendChild(document.createTextNode(x))})}
+function body(txt,m){txt.split(/\n\s*\n/).forEach(function(b){b=b.trim();if(!b)return;var ar=isAr(b)?'ar':'';
+  if(b.indexOf('## ')===0)m.appendChild(el('h2',{t:b.slice(3)}));
+  else if(b[0]==='>'){var bq=el('blockquote',{c:ar}),p=el('p',{c:ar});inl(b.replace(/^>\s?/gm,''),p);bq.appendChild(p);m.appendChild(bq)}
+  else if(/^- /.test(b)){var ul=el('ul');b.split('\n').forEach(function(l){var li=el('li');inl(l.replace(/^-\s*/,''),li);ul.appendChild(li)});m.appendChild(ul)}
+  else{var p2=el('p',{c:ar});inl(b,p2);m.appendChild(p2)}})}
+function pubList(){return S.artikel.filter(function(a){return !a.draf}).sort(function(a,b){return b.tgl.localeCompare(a.tgl)})}
+function plain(a){return a.isi.replace(/[#>*-]/g,'').split(/\n\s*\n/).filter(function(x){return x.trim()&&!isAr(x)})[0]||''}
+function item(a,lead){var c=plain(a).trim();if(c.length>150)c=c.slice(0,150).trim()+'...';
+  return el('a',{c:lead?'lead':'it',href:'#/baca/'+a.id},[el('div',{c:'cat',t:bn(a.bid)+(a.draf?' (draf)':'')}),el(lead?'h3':'h3',{t:a.judul}),el('p',{t:c}),el('div',{c:'meta',t:fmt(a.tgl)})])}
+function go(f){f();menu=false;admin=false;render();window.scrollTo(0,0)}
+function render(){
+  document.title=S.nama;var app=document.getElementById('app');app.textContent='';
+  var hd=el('div',{c:'hd'}),w=el('div',{c:'w'}),r=el('div',{c:'hr'});
+  var mb=el('button',{c:'ib','aria-label':'Menu bidang',style:'justify-self:start'},[el('span',{c:'hb'})]);mb.onclick=function(){menu=true;render()};
+  var sb=el('button',{c:'ib',t:'Cari',style:'justify-self:end'});sb.onclick=function(){srch=!srch;render();if(srch)document.getElementById('qi').focus()};
+  r.appendChild(mb);r.appendChild(el('a',{c:'logo',href:'#/',t:S.nama}));r.appendChild(sb);w.appendChild(r);
+  if(srch||q){var qi=el('input',{id:'qi',type:'search',placeholder:'Cari judul, isi, atau kata kunci','aria-label':'Cari',c:'sr'});qi.value=q;
+    qi.oninput=function(){q=qi.value;var p=qi.selectionStart;render();var x=document.getElementById('qi');x.focus();x.setSelectionRange(p,p)};w.appendChild(el('div',{c:'sr'},[qi]))}
+  hd.appendChild(w);app.appendChild(hd);
+  var h=location.hash,mr=h.match(/^#\/baca\/(.+)$/),mk=h.match(/^#\/b\/(.+)$/);
+  if(admin&&can){var m=el('main',{c:'w'});app.appendChild(m);adm(m)}
+  else if(mr)art(app,mr[1]);
+  else if(h==='#/berita'&&!q)news(app);
+  else if(q)lst(app,'Hasil pencarian','Tidak ada artikel yang cocok.',pubList().filter(function(a){var s=q.toLowerCase();return(a.judul+' '+a.isi+' '+(a.tag||[]).join(' ')).toLowerCase().indexOf(s)>=0}));
+  else if(mk)lst(app,bn(mk[1]),'Belum ada artikel di bidang ini.',pubList().filter(function(a){return a.bid===mk[1]}));
+  else home(app);
+  var mm=document.querySelector('main')||app;
+  if(can&&dirty){var pb=el('button',{c:'btn',t:'Simpan dan publikasikan'});pb.onclick=publish;mm.appendChild(el('div',{c:'save'},[el('span',{t:'Ada perubahan yang belum dipublikasikan'}),pb]))}
+  var f=el('footer',{c:'w'},[el('div',{t:'Jawaban dan tulisan di situs ini bersifat edukatif dan bukan fatwa.'})]);
+  if(S.foot)f.appendChild(el('div',{t:S.foot,style:'margin-top:6px'}));
+  f.appendChild(el('div',{t:S.nama,style:'margin-top:6px'}));
+  if(can){var kb=el('button',{c:'btn',t:admin?'Lihat situs':'Kelola',style:'margin-top:12px'});kb.onclick=function(){admin=!admin;editId=null;render();window.scrollTo(0,0)};f.appendChild(el('div',null,[kb]))}
+  app.appendChild(f);
+  if(menu){var ov=el('div',{c:'ov'}),dr=el('nav',{c:'dr','aria-label':'Bidang keilmuan'});
+    dr.appendChild(el('h2',{t:S.nama}));
+    var add=function(t,fn,cur){var b=el('button',{t:t,'aria-current':String(!!cur)});b.onclick=function(){go(fn)};dr.appendChild(b)};
+    add('Beranda',function(){q='';location.hash='#/'},!mk&&!mr&&!q&&h!=='#/berita');
+    add('Berita',function(){q='';location.hash='#/berita'},h==='#/berita'&&!q);
+    S.bidang.forEach(function(b){add(b.nama,function(){q='';location.hash='#/b/'+b.id},mk&&mk[1]===b.id)});
+    if(S.wa)add('Kirim pertanyaan',function(){window.open('https://wa.me/'+S.wa+'?text='+encodeURIComponent('Assalamu\'alaikum, saya ingin bertanya: '),'_blank')});
+    ov.appendChild(dr);ov.onclick=function(e){if(e.target===ov){menu=false;render()}};app.appendChild(ov)}
+  fillPray();
+}
+function poCard(){
+  var s=el('section',{c:'pray','aria-label':'Jadwal shalat'}),c=findCity(kota);
+  if(c){var d=dates(),ch=el('button',{c:'btn',t:'Ganti lokasi'});ch.onclick=function(){kota='';pv=null;render()};
+    s.appendChild(el('div',{c:'dt'},[el('div',null,[el('b',{t:d[0]}),el('small',{t:d[1]}),el('small',{t:c[0]+', '+c[4]})]),ch]));
+    s.appendChild(el('div',{id:'pray'}));
+    s.appendChild(el('p',{c:'note',t:'Jadwal perkiraan hasil hitungan, bisa selisih satu sampai dua menit dari jadwal resmi. Tanggal Hijriah mengikuti daftar awal bulan dari Kemenag.'}));return s}
+  s.appendChild(el('b',{c:'ttl',t:pv===null?'Jadwal shalat: pilih provinsi':PROV[pv][0]+': pilih kota'}));
+  if(pv!==null){var bk=el('button',{c:'back',t:'Kembali ke daftar provinsi'});bk.onclick=function(){pv=null;render()};s.appendChild(bk)}
+  var g=el('div',{c:'chips'});
+  if(pv===null)PROV.forEach(function(p,i){var b=el('button',{t:p[0]});b.onclick=function(){pv=i;render()};g.appendChild(b)});
+  else PROV[pv][2].forEach(function(x){var b=el('button',{t:x[0]});b.onclick=function(){kota=x[0];try{localStorage.setItem('kota',kota)}catch(e){}render()};g.appendChild(b)});
+  s.appendChild(g);return s}
+function nitem(x){var ok=/^https?:\/\//.test(x.url||'');
+  return el(ok?'a':'div',ok?{c:'it',href:x.url,target:'_blank',rel:'noopener noreferrer'}:{c:'it'},[el('div',{c:'cat',t:x.sumber||'Berita'}),el('h3',{t:x.judul}),el('p',{t:x.ringkas}),el('div',{c:'meta',t:fmt(x.tgl)+(ok?' | Buka di sumber':'')})])}
+function bnote(){return el('p',{c:'note',t:'Ringkasan disusun dengan kata-kata sendiri dari berita yang ditautkan. Baca berita lengkapnya di sumber aslinya. Terakhir diperbarui '+fmt(S.beritaTgl||'')+'.'})}
+function news(app){
+  var m=el('main',{c:'w'});app.appendChild(m);m.appendChild(el('h2',{c:'sec',t:'Berita terkini'}));
+  var b=(S.berita||[]).slice().sort(function(a,c){return c.tgl.localeCompare(a.tgl)});
+  if(!b.length)m.appendChild(el('div',{c:'empty',t:'Belum ada berita.'}));
+  b.forEach(function(x){m.appendChild(nitem(x))});
+  m.appendChild(bnote());
+}
+function home(app){
+  var d=dates(),hero=el('div',{c:'hero'},[el('div',{c:'w'},[el('h1',{t:'Marhaban'}),el('p',{t:S.salam})])]);app.appendChild(hero);
+  var m=el('main',{c:'w'});app.appendChild(m);
+  m.appendChild(poCard());
+  if(S.umum)m.appendChild(el('div',{c:'an',role:'note',t:S.umum}));
+  var nb=(S.berita||[]).slice().sort(function(a,c){return c.tgl.localeCompare(a.tgl)}).slice(0,3);
+  if(nb.length){var nm=el('button',{t:'Lihat semua'});nm.onclick=function(){go(function(){location.hash='#/berita'})};
+    m.appendChild(el('h2',{c:'sec'},[el('span',{t:'Berita terkini'}),nm]));nb.forEach(function(x){m.appendChild(nitem(x))})}
+  var l=pubList();
+  if(!l.length)m.appendChild(el('div',{c:'empty',t:'Belum ada artikel.'}));
+  else{m.appendChild(el('h2',{c:'sec',t:'Artikel terbaru'}));m.appendChild(item(l[0],true));l.slice(1,5).forEach(function(a){m.appendChild(item(a))})}
+  S.bidang.forEach(function(b){var x=l.filter(function(a){return a.bid===b.id}).slice(0,3);if(!x.length)return;
+    var more=el('button',{t:'Lihat semua'});more.onclick=function(){go(function(){location.hash='#/b/'+b.id})};
+    m.appendChild(el('h2',{c:'sec'},[el('span',{t:b.nama}),more]));x.forEach(function(a){m.appendChild(item(a))})});
+  if(S.wa){m.appendChild(el('div',{c:'ask'},[el('h3',{t:'Punya pertanyaan?'}),el('p',{t:'Kirim lewat WhatsApp dan jawabannya bisa terbit di sini.'}),el('a',{c:'btn',target:'_blank',rel:'noopener',href:'https://wa.me/'+S.wa+'?text='+encodeURIComponent('Assalamu\'alaikum, saya ingin bertanya: '),t:'Kirim pertanyaan'})]))}
+}
+function lst(app,title,empty,l){
+  var m=el('main',{c:'w'});app.appendChild(m);m.appendChild(el('h2',{c:'sec',t:title}));
+  if(!l.length)m.appendChild(el('div',{c:'empty',t:empty}));l.forEach(function(a){m.appendChild(item(a))});
+}
+function art(app,id){
+  var m=el('main',{c:'w'});app.appendChild(m);
+  var a=S.artikel.filter(function(x){return x.id===id&&(!x.draf||can)})[0];
+  if(!a){m.appendChild(el('div',{c:'empty',t:'Artikel tidak ditemukan. Mungkin sudah dihapus atau dipindahkan.'}));m.appendChild(el('a',{c:'btn',href:'#/',t:'Ke beranda'}));return}
+  var wc=a.isi.split(/\s+/).length,mnt=Math.max(1,Math.round(wc/200));
+  var bd=el('div',{c:'bd'});body(a.isi,bd);
+  var ct=el('a',{c:'cat',href:'#/b/'+a.bid,t:bn(a.bid)+(a.draf?' (draf, belum terbit)':'')});
+  m.appendChild(el('article',{c:'ar1'},[el('header',null,[ct,el('h1',{t:a.judul}),el('div',{c:'meta',t:fmt(a.tgl)+(a.pj?' | '+a.pj:'')+' | '+mnt+' menit baca'})]),bd]));
+  m.appendChild(el('div',{c:'wa',t:'Wallahu a\'lam bish-shawab.'}));
+  if(a.rj)m.appendChild(el('div',{c:'rj'},[el('b',{t:'Rujukan\n'}),document.createTextNode(a.rj)]));
+  if((a.tag||[]).length){var tg=el('div',{c:'tg'});a.tag.forEach(function(t){var b=el('button',{t:'#'+t});b.onclick=function(){q=t;srch=true;location.hash='#/';render()};tg.appendChild(b)});m.appendChild(tg)}
+  var sh=el('a',{c:'btn p',target:'_blank',rel:'noopener',href:'https://wa.me/?text='+encodeURIComponent(a.judul+' '+location.href.split('#')[0]+'#/baca/'+a.id),t:'Bagikan ke WhatsApp'});
+  var cp=el('button',{c:'btn',t:'Salin link'});cp.onclick=function(){var u=location.href.split('#')[0]+'#/baca/'+a.id;try{navigator.clipboard.writeText(u).then(function(){toast('Link disalin')},function(){toast('Gagal menyalin')})}catch(e){toast('Gagal menyalin')}};
+  m.appendChild(el('div',{c:'act'},[sh,cp]));
+  var rel=pubList().filter(function(x){return x.bid===a.bid&&x.id!==a.id}).slice(0,3);
+  if(rel.length){m.appendChild(el('h2',{c:'sec',t:'Artikel terkait'}));rel.forEach(function(x){m.appendChild(item(x))})}
+}
+function twice(b,label,fn){b.onclick=function(){if(b.dataset.s){fn();return}b.dataset.s=1;b.textContent='Yakin?';setTimeout(function(){b.dataset.s='';b.textContent=label},3000)}}
+function F(label,node){return el('label',null,[el('span',{t:label}),node])}
+function inp(v,fn,o){var i=el(o&&o.tag||'input',o&&o.a||{});i.value=v;i.onchange=function(){fn(i.value)};return i}
+function adm(m){
+  var s=el('div',{c:'pn'});s.appendChild(el('h2',{t:'Pengaturan situs'}));
+  s.appendChild(F('Nama situs',inp(S.nama,function(v){if(v.trim())mut(function(){S.nama=v.trim()})},{a:{maxlength:'60'}})));
+  s.appendChild(F('Keterangan singkat',inp(S.tag,function(v){mut(function(){S.tag=v.trim()})})));
+  s.appendChild(F('Teks sambutan di bawah Marhaban',inp(S.salam,function(v){mut(function(){S.salam=v.trim()})},{tag:'textarea',a:{style:'min-height:80px'}})));
+  s.appendChild(F('Pengumuman beranda (kosongkan jika tidak ada)',inp(S.umum,function(v){mut(function(){S.umum=v.trim()})})));
+  var ks=el('select');ks.appendChild(el('option',{value:'',t:'Tanpa lokasi awal (pengunjung memilih)'}));
+  PROV.forEach(function(p){var g=el('optgroup',{label:p[0]});p[2].forEach(function(c){var o=el('option',{value:c[0],t:c[0]});if(c[0]===S.kota)o.selected=true;g.appendChild(o)});ks.appendChild(g)});
+  ks.onchange=function(){mut(function(){S.kota=ks.value;kota=ks.value;pv=null})};
+  s.appendChild(F('Lokasi awal jadwal shalat',ks));
+  var hs=el('select');[[-1,'Mundur satu hari'],[0,'Tanpa koreksi'],[1,'Maju satu hari']].forEach(function(x){var o=el('option',{value:x[0],t:x[1]});if(x[0]===S.hj)o.selected=true;hs.appendChild(o)});hs.onchange=function(){mut(function(){S.hj=Number(hs.value)})};
+  s.appendChild(F('Koreksi Hijriah (hanya untuk tanggal di luar daftar awal bulan)',hs));
+  var aw=el('textarea',{style:'min-height:130px'});aw.value=S.awal.map(function(a){return a[0]+' '+a[1]+' '+a[2]}).join('\n');
+  aw.onchange=function(){var r=[];aw.value.split('\n').forEach(function(l){var x=l.match(/(\d{4}-\d\d-\d\d)\s+(\d+)\s+(\d{4})/);if(x&&x[2]>=1&&x[2]<=12)r.push([x[1],+x[2],+x[3]])});mut(function(){S.awal=r})};
+  s.appendChild(F('Awal bulan Hijriah: tanggal Masehi, nomor bulan, tahun (satu baris satu bulan)',aw));
+  s.appendChild(el('p',{c:'note',t:'Nomor bulan: 1 Muharram, 2 Safar, 3 Rabiulawal, 4 Rabiulakhir, 5 Jumadilawal, 6 Jumadilakhir, 7 Rajab, 8 Syaban, 9 Ramadan, 10 Syawal, 11 Zulkaidah, 12 Zulhijah. Tambahkan baris baru tiap ada penetapan awal bulan dari Kemenag.'}));
+  s.appendChild(F('Nomor WhatsApp untuk pertanyaan (awali 62, tanpa spasi)',inp(S.wa,function(v){mut(function(){S.wa=v.replace(/\D/g,'')})},{a:{inputmode:'numeric'}})));
+  s.appendChild(F('Teks tambahan di bawah situs (kontak, media sosial)',inp(S.foot,function(v){mut(function(){S.foot=v.trim()})})));
+  m.appendChild(s);
+  var b=el('div',{c:'pn'});b.appendChild(el('h2',{t:'Bidang keilmuan'}));
+  S.bidang.forEach(function(x,i){
+    var d=el('button',{c:'btn d',t:'Hapus'});twice(d,'Hapus',function(){mut(function(){S.bidang=S.bidang.filter(function(y){return y!==x})})});
+    var up=el('button',{c:'btn',t:'Naik','aria-label':'Naikkan '+x.nama});up.onclick=function(){if(i>0)mut(function(){S.bidang.splice(i-1,0,S.bidang.splice(i,1)[0])})};
+    b.appendChild(el('div',{c:'row'},[inp(x.nama,function(v){if(v.trim())mut(function(){x.nama=v.trim()})},{a:{'aria-label':'Nama bidang',maxlength:'40'}}),up,d]));
+    var n=S.artikel.filter(function(a){return a.bid===x.id}).length;if(n)b.lastChild.title=n+' artikel memakai bidang ini'});
+  var ni=el('input',{placeholder:'Bidang baru, misalnya Tasawuf','aria-label':'Bidang baru',maxlength:'40'}),na=el('button',{c:'btn p',t:'Tambah'});
+  na.onclick=function(){var v=ni.value.trim();if(v)mut(function(){S.bidang.push({id:uid(),nama:v})})};
+  b.appendChild(el('div',{c:'row'},[ni,na]));b.appendChild(el('p',{c:'note',t:'Artikel dari bidang yang dihapus akan berlabel Lainnya sampai dipindahkan.'}));m.appendChild(b);
+  var cur=S.artikel.filter(function(x){return x.id===editId})[0]||{judul:'',bid:S.bidang[0]?S.bidang[0].id:'',isi:'',pj:'',rj:'',tag:[],tgl:new Date().toISOString().slice(0,10),draf:false};
+  var f=el('div',{c:'pn'});f.appendChild(el('h2',{t:editId?'Ubah artikel':'Tambah artikel'}));
+  var j=el('input',{maxlength:'200'});j.value=cur.judul;
+  var bs=el('select');S.bidang.forEach(function(x){var o=el('option',{value:x.id,t:x.nama});if(x.id===cur.bid)o.selected=true;bs.appendChild(o)});
+  var pj=el('input');pj.value=cur.pj||'';var tg=el('input',{placeholder:'wudhu, shalat'});tg.value=(cur.tag||[]).join(', ');
+  var dt=el('input',{type:'date'});dt.value=cur.tgl;
+  var is=el('textarea',{style:'min-height:240px'});is.value=cur.isi;var rj=el('textarea',{style:'min-height:70px'});rj.value=cur.rj||'';
+  var dr=el('input',{type:'checkbox'});dr.checked=!!cur.draf;
+  [['Judul atau pertanyaan',j],['Bidang',bs],['Penulis atau penjawab',pj],['Tanggal',dt],['Isi atau jawaban',is]].forEach(function(x){f.appendChild(F(x[0],x[1]))});
+  f.appendChild(el('p',{c:'note',t:'Pisahkan paragraf dengan baris kosong. Awali paragraf dengan "## " untuk sub-judul, "> " untuk kutipan dalil, "- " untuk daftar. Gunakan **tebal** dan *miring*. Teks Arab otomatis rata kanan.'}));
+  [['Rujukan atau kitab sumber',rj],['Kata kunci (pisahkan dengan koma)',tg]].forEach(function(x){f.appendChild(F(x[0],x[1]))});
+  f.appendChild(el('label',{c:'ck'},[dr,el('span',{t:'Simpan sebagai draf (belum tampil ke pengunjung)',style:'margin:0'})]));
+  var sv=el('button',{c:'btn p',t:'Simpan artikel'});
+  sv.onclick=function(){var ju=j.value.trim(),ii=is.value.trim();if(!ju||!ii){toast('Judul dan isi wajib diisi');return}
+    var o={judul:ju,bid:bs.value,pj:pj.value.trim(),tgl:dt.value||cur.tgl,isi:ii,rj:rj.value.trim(),draf:dr.checked,tag:tg.value.split(',').map(function(t){return t.trim().toLowerCase()}).filter(Boolean)};
+    mut(function(){if(editId)Object.assign(cur,o);else{o.id=uid();S.artikel.push(o)}editId=null})};
+  var rw=el('div',{c:'row'},[sv]);if(editId){var c=el('button',{c:'btn',t:'Batal'});c.onclick=function(){editId=null;render()};rw.appendChild(c)}
+  f.appendChild(rw);m.appendChild(f);
+  var l=el('div',{c:'pn'});l.appendChild(el('h2',{t:'Semua artikel ('+S.artikel.length+')'}));
+  S.artikel.slice().reverse().forEach(function(a){
+    var e=el('button',{c:'btn',t:'Ubah'});e.onclick=function(){editId=a.id;render();window.scrollTo(0,0)};
+    var v=el('a',{c:'btn',href:'#/baca/'+a.id,t:'Lihat'});
+    var d=el('button',{c:'btn d',t:'Hapus'});twice(d,'Hapus',function(){mut(function(){S.artikel=S.artikel.filter(function(y){return y!==a})})});
+    l.appendChild(el('div',{c:'ad'},[el('span',{t:a.judul+' ('+bn(a.bid)+')'+(a.draf?' - draf':'')}),el('div',{c:'row',style:'margin:0'},[v,e,d])]))});
+  m.appendChild(l);
+  var bp=el('div',{c:'pn'});bp.appendChild(el('h2',{t:'Berita terkini ('+(S.berita||[]).length+')'}));
+  bp.appendChild(el('p',{c:'note',t:'Untuk memperbarui daftar berita, minta Claude di percakapan: "perbarui berita". Di sini kamu hanya bisa menghapus berita.'}));
+  (S.berita||[]).forEach(function(x){var d=el('button',{c:'btn d',t:'Hapus'});twice(d,'Hapus',function(){mut(function(){S.berita=S.berita.filter(function(y){return y!==x})})});
+    bp.appendChild(el('div',{c:'ad'},[el('span',{t:x.judul+' ('+x.sumber+')'}),d]))});
+  m.appendChild(bp);
+}
+window.addEventListener('hashchange',function(){admin=false;menu=false;render();window.scrollTo(0,0)});
+render();
+</script></body></html>
